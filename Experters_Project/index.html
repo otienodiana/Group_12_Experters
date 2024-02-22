@@ -12,7 +12,7 @@
     <a class="active" href="#Home">Home</a>
     <a href="#About Us">About Us</a>
     <a href="#Resumes">Resumes</a>
-    <a href="Services">Services</a>
+    <a href="#Services">Services</a>
     <a href="#Contact">Contact</a>
     </div>
   </nav>  
@@ -26,11 +26,11 @@
  
       
       <div class="team-header" id="About Us">
-        <p class="heading" style="font-size: 50px">About Us</p>
+        <p class="heading" style="font-size: 50px;text-align: center;">About Us</p>
         <p>EXperters was founded by 2 Ambitiuious Engineers who had the Zeal and passion to offer sofware as services to the contineents.our mission to provide expert based portfolios .e value Hardork ,Dedication,commitment and Teamwork</p>
         <hr style="border-color: white; width: 280px; margin-bottom: 20px" />
       </div>
-      <div class="team-body">
+      <div class="team-body" style="display: flex;">
         <div class="card">
           <img
             class="team-member-image"style="width: 400px"
@@ -68,75 +68,95 @@
           </div>
         </div>
       </div>    
-
       <div class="team-header" id="Resumes">
-        <p class="heading" style="font-size: 50px">Resumes</p>
-        <p>Dive into these articles full of  knowledgeb</p>
-        <hr style="border-color: white; width: 100px; margin-bottom: 100px" />
+        <p class="heading" style="font-size: 50px; text-align:center">Resumes</p>
+        <hr style="border-color: rgb(6, 1, 1); width: 280px; margin-bottom: 20px" />
       </div>
-      <div class="row">
-        <div class="column">
-          <img src="bully juice.jpg" alt="Bully juice" style="width:100%">
-          <p>The Bullies Juice</p>
+      <div class="team-body">
+        <div class="card">
+          <img
+            class="team-member-image"style="width: 400px"
+            src="businezz.jpg"
+          />
+          <div class="team-detail">
+            <p class="name" style="color: rgb(106, 46, 236); text-align: justify">
+              Business_Portfolios
+            </p>
+            <p
+              class="designation"
+              style="color: rgb(106, 46, 236); text-align: justify; font-weight: bold"
+            >
+              Best_Of_2023
+            </p>
+          </div>
         </div>
-        <div class="column">
-          <img src="bb2.jpg" alt="Bullys Short story" style="width:100%">
-          <p>Billy the Bully and other Stories</p>
+        <div class="card">
+          <img
+            class="team-member-image" style="width: 400px;"
+            src="Portfolio-Career.png"
+          />
+          <div class="team-detail">
+            <p class="name" style="color: rgb(106, 46, 236); text-align: justify">Career_Portfolios</p>
+            <p
+              class="designation"
+              style="color: grey; text-align: justify; font-weight: bold"
+            >
+            Best_Of_2023
+            </p>
+          </div>
         </div>
-        <div class="column">
-          <img src="bb3.png" alt="More books" style="width:100%">
-             <p>More books</p>
+        <div class="team-header" id="Services">
+          <p class="heading" style="font-size: 50px; text-align:center">Services</p>
+          <hr style="border-color: rgb(6, 1, 1); width: 280px; margin-bottom: 20px" />
         </div>
-      </div>
+        <div class="team-body">
+          <div class="card">
+            <img
+              class="team-member-image"style="width: 400px"
+              src="speek.webp"
+            />
+            <div class="team-detail">
+              <p class="name" style="color: rgb(106, 46, 236); text-align: justify">
+                Portfolio designation
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="team-member-image"style="width: 400px"
+              src="sp2.jpg"
+            />
+            <div class="team-detail">
+              <p class="name" style="color: rgb(106, 46, 236); text-align: justify">
+                Portfolio Courses
+              </p>
+            </div>
+          </div>
+        </div>
 
+            <div class="team-header" id="Contact">
+              <p class="heading" style="font-size: 50px; text-align:center">Contact</p>
+              <hr style="border-color: rgb(6, 1, 1); width: 280px; margin-bottom: 20px" />
+            </div>
+            <div class="container">
+             
+              <p>Please fill out the form below to contact us.</p>
+              <form action="submit_form.php" method="post">
+                  <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+        
 
-        <div class="Helpline-section" id="Helpline">
- <p class="heading" style="font-size: 50px">Contact Us</p>
-        <hr style="border-color: white; width: 100px; margin-bottom: 100px" />
-      </div>
-      <h1>Contact Form</h1>
-<div class="my-image">
-<form id="contact_form" name="contact_form" method="post">
-    <div class="mb-5 row">
-        <div class="col">
-            <label>First Name</label>
-            <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
-        </div>
-        <div class="col">
-            <label>Last Name</label>
-            <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
-        </div>
-    </div>
-    <div class="mb-5 row">
-        <div class="col">
-            <label for="email_addr">Email address</label>
-            <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
-                placeholder="name@example.com">
-        </div>
-        <div class="col">
-            <label for="phone_input">Phone</label>
-            <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
-                placeholder="Phone">
-        </div>
-    </div>
-    <div class="mb-5">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary px-4 btn-lg">Post</button>
-</form>
-
-
-<div class="testimonial-section" id="Testimonials">
-  <p class="heading" style="font-size: 50px">Testimonies</p>
-        <hr style="border-color: white; width: 100px; margin-bottom: 100px" />
-  <img src="deeeeee.jpg" alt="Avatar" style="width:90px">
-  <p><span>Dina Kindah.</span> CEO at Goups of Schools.</p>
-  <p>Diana is passionate about technology and is always curious about the world of technology.</p>
-</div>
-
-<div class="testimonial-section" id="Testimonials">
-  <img src="bully juice.jpg" alt="Avatar" style="width:90px">
-  <p><span >Bully Juice.</span> CEO at Communication Authority of Kenya.</p>
-  <p>Bully juice is a bitter herb that bullies should be forced to flush into their guts .</p>
-</div>   
+       
